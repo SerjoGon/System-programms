@@ -5,9 +5,11 @@ VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System programms", "System programms\System programms.csproj", "{9A395B65-FFD9-400B-8990-740EB37A0865}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkWithNotepad", "WorkWithNotepad\WorkWithNotepad.csproj", "{6DB06067-801E-42B4-9AE1-515A13328FCA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkWithNotepad", "WorkWithNotepad\WorkWithNotepad.csproj", "{6DB06067-801E-42B4-9AE1-515A13328FCA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessShow", "ProcessShow\ProcessShow.csproj", "{9EBFEF4B-723C-4738-A03B-808BCEAAAC34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProcessShow", "ProcessShow\ProcessShow.csproj", "{9EBFEF4B-723C-4738-A03B-808BCEAAAC34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadsApps", "ThreadsApps\ThreadsApps.csproj", "{1796818F-BCE9-4EAA-8137-9B8C02F3125F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{9EBFEF4B-723C-4738-A03B-808BCEAAAC34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EBFEF4B-723C-4738-A03B-808BCEAAAC34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EBFEF4B-723C-4738-A03B-808BCEAAAC34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1796818F-BCE9-4EAA-8137-9B8C02F3125F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1796818F-BCE9-4EAA-8137-9B8C02F3125F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1796818F-BCE9-4EAA-8137-9B8C02F3125F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1796818F-BCE9-4EAA-8137-9B8C02F3125F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
