@@ -1,9 +1,12 @@
 ﻿using System.Security;
+using System.Text;
+using System.Threading;
 
 namespace ThreadsApps
 {
     internal class Program
     {
+        static ParameterizedThreadStart threadStart = new ParameterizedThreadStart(SaveDataToFile);
         static void Main(string[] args)
         {
             /*MyObject myObject = new MyObject(Int32.Parse(Console.ReadLine()));
@@ -56,40 +59,68 @@ namespace ThreadsApps
             Thread thread2 = new Thread(minelemstart);
             Thread thread3 = new Thread(avgelemstart);
             thread1.Start(massive);
+            thread1.Join();
             thread2.Start(massive);
+            thread2.Join();
             thread3.Start(massive);
+            thread3.Join();
+
         }
         static void MaxElem(object massive)
         {
-           
-            Console.WriteLine(((int[])massive).Max().ToString());
+            int result = ((int[])massive).Max();
+            Console.WriteLine(result.ToString());
+            Thread thread = new Thread(threadStart);
+            thread.Start(result);
+            thread.Join();
         }
         static void MinElem(object massive)
         {
-            Console.WriteLine(((int[])massive).Min().ToString());
+            int result = ((int[])massive).Min();
+            Console.WriteLine(result.ToString());
+            Thread thread = new Thread(threadStart);
+            thread.Start(result);
+            thread.Join();
         }
         static void AvgElem(object massive)
         {
-            Console.WriteLine(((int[])massive).Average().ToString());
-        }
-        public class MyObject
-        {
-            public int? start { get; set; }
-            public int? finish { get; set; }
-            public string message { get; set; } = "это читерство";
-            public Thread[] threads;
-            MyObject() { }
+            double result = ((int[])massive).Average();
+            Console.WriteLine(result.ToString());
+            Thread thread = new Thread(threadStart);
+            thread.Start(result);
+            thread.Join();
 
-            public MyObject(int countthread)
+        }
+        static void SaveDataToFile(object number)
+        {
+            FileStreamOptions foptions = new FileStreamOptions();
+            foptions.Access = FileAccess.Write;
+            foptions.Share= FileShare.Write;
+            foptions.Mode= FileMode.OpenOrCreate;
+            
+            //FileStream file = new FileStream("Task5.txt",FileMode.OpenOrCreate,FileAccess.Write,FileShare.Write);
+            StreamWriter writer = new StreamWriter("Task5.txt",Encoding.UTF8, foptions);
+            writer.WriteLineAsync(number.ToString());
+            writer.Close();
+        }
+    }
+    public class MyObject
+    {
+        public int? start { get; set; }
+        public int? finish { get; set; }
+        public string message { get; set; } = "это читерство";
+        public Thread[] threads;
+        MyObject() { }
+
+        public MyObject(int countthread)
+        {
+            if (countthread > 0)
             {
-                if (countthread > 0)
-                {
-                    threads = new Thread[countthread];
-                }
-                else
-                {
-                    threads = new Thread[1];
-                }
+                threads = new Thread[countthread];
+            }
+            else
+            {
+                threads = new Thread[1];
             }
         }
     }
