@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProcessShow", "ProcessShow\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThreadsApps", "ThreadsApps\ThreadsApps.csproj", "{1796818F-BCE9-4EAA-8137-9B8C02F3125F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFwithAsyncThreads", "WFwithAsyncThreads\WFwithAsyncThreads.csproj", "{ACE10429-2D88-4C04-96F7-59A25003B9F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WFwithAsyncThreads", "WFwithAsyncThreads\WFwithAsyncThreads.csproj", "{ACE10429-2D88-4C04-96F7-59A25003B9F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopyAPP", "CopyAPP\CopyAPP.csproj", "{1AD10545-8154-40F1-9C1B-72C2187DB043}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{ACE10429-2D88-4C04-96F7-59A25003B9F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACE10429-2D88-4C04-96F7-59A25003B9F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACE10429-2D88-4C04-96F7-59A25003B9F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AD10545-8154-40F1-9C1B-72C2187DB043}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AD10545-8154-40F1-9C1B-72C2187DB043}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AD10545-8154-40F1-9C1B-72C2187DB043}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AD10545-8154-40F1-9C1B-72C2187DB043}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
