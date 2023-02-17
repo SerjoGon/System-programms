@@ -48,7 +48,7 @@ namespace WFwithAsyncThreads
 
         private void btn_symbthread_Click(object sender, EventArgs e)
         {
-            ThreadStart start = new ThreadStart(WriteSymbols);
+            ThreadStart start = new ThreadStart(writecharswrap);
             threads[1] = new Thread(start);
             threads[1].Name = "Symbols Thread";
             lbox_threads.Items.Add(threads[1].Name.ToString());
@@ -85,6 +85,10 @@ namespace WFwithAsyncThreads
             threads[1] = new Thread(new ThreadStart(Writeletters));
             threads[2] = new Thread(new ThreadStart(Writeletters));
         }
+        void writecharswrap()
+        {
+            richTextBox1.Invoke(WriteSymbols);
+        }
         void WriteNumbers()
         {
             while (true)
@@ -102,6 +106,7 @@ namespace WFwithAsyncThreads
         {
             while (true)
             {
+                
                 richTextBox1.Text += allchars[random.Next(36, 45)];
                 counter++;
                 Thread.Sleep(50);
@@ -142,14 +147,5 @@ namespace WFwithAsyncThreads
             }
         }
     }
-    class MyAssyncResult : IAsyncResult
-    {
-        public object? AsyncState => throw new NotImplementedException();
-
-        public WaitHandle AsyncWaitHandle => throw new NotImplementedException();
-
-        public bool CompletedSynchronously => throw new NotImplementedException();
-
-        public bool IsCompleted => throw new NotImplementedException();
-    }
+   
 }
