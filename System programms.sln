@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WFwithAsyncThreads", "WFwit
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CopyAPP", "CopyAPP\CopyAPP.csproj", "{1AD10545-8154-40F1-9C1B-72C2187DB043}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinApiMessageBeepDZ1", "WinApiMessageBeepDZ1\WinApiMessageBeepDZ1.csproj", "{631F4D27-A14F-4459-AA7D-6AB06D87567E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinApiMessageBeepDZ1", "WinApiMessageBeepDZ1\WinApiMessageBeepDZ1.csproj", "{631F4D27-A14F-4459-AA7D-6AB06D87567E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncWork", "AsyncWork\AsyncWork.csproj", "{2818A25F-DEE7-42B7-977E-F8328ADBFA54}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{631F4D27-A14F-4459-AA7D-6AB06D87567E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{631F4D27-A14F-4459-AA7D-6AB06D87567E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{631F4D27-A14F-4459-AA7D-6AB06D87567E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2818A25F-DEE7-42B7-977E-F8328ADBFA54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2818A25F-DEE7-42B7-977E-F8328ADBFA54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2818A25F-DEE7-42B7-977E-F8328ADBFA54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2818A25F-DEE7-42B7-977E-F8328ADBFA54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
