@@ -23,6 +23,7 @@ namespace WinApiMessageBeepDZ1
 
         static void Main(string[] args)
         {
+            MessageBox(IntPtr.Zero, "lalalala", "lolololo", 0x030);
             beep(beepType.Asterisk);
             Thread.Sleep(1000);
             beep(beepType.Exclamation);
@@ -31,7 +32,6 @@ namespace WinApiMessageBeepDZ1
             Thread.Sleep(1000);
             beep(beepType.Question);
             Thread.Sleep(1000);
-            beep(beepType.SimpleBeep);
         }
         public static void beep(beepType type)
         {
