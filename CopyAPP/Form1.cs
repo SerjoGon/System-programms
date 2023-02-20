@@ -25,12 +25,15 @@ namespace CopyAPP
 
         private void btn_start_Click(object sender, EventArgs e)
         {
-            FileStream fs = new FileStream(tb_origpath.Text, FileMode.Open);
+            /*Обьявление переменных и потоков*/
+            FileStream fs = new FileStream(tb_origpath.Text, FileMode.Open,FileAccess.Read,FileShare.Read,100,FileOptions.Asynchronous);
             FileStream fswrite = new FileStream(tb_targetpath.Text, FileMode.OpenOrCreate);
             byte[] b;
             long lengthfile = fs.Length;
+            /*Установка нач знач прогресс бара*/
             progressBar1.Maximum = (int)lengthfile;
             progressBar1.Minimum = 0;
+            /*Создание массива чтения файла */
             int countoperation = 100;
             long[] partsfilelength = new long[countoperation];
             for (int i = 0; i < countoperation; i++)
@@ -41,6 +44,7 @@ namespace CopyAPP
                     partsfilelength[i] += lengthfile%countoperation;
                 }
             }
+            /*Установка конеч знач прогресс бара*/
             long pbvalue = 1;
                 if(lengthfile > 1000)
             {
@@ -49,6 +53,7 @@ namespace CopyAPP
             foreach (long i in partsfilelength)
             {
                 b = new byte[i];
+                fs.BeginRead(b, 0, b.Length, null, null);
                 fs.Read(b, 0, b.Length);
                 fswrite.Write(b, 0, b.Length);
                 progressBar1.Value = (int)(lengthfile/pbvalue);
