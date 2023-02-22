@@ -95,6 +95,7 @@ namespace CopyAPP
             FileStream _filestream;
             FileStream _fswrite ;
             
+            
             public MyStateObject(byte[] bytes, FileStream filestream,string path,int position)
             {
                 _bytes = bytes;
