@@ -60,6 +60,8 @@ namespace CopyAPP
                 data = new byte[partsfilelength[i]];
                 int pos = data.Length * i;
                 fs.BeginRead(data, 0, data.Length, MessageBoxPrint, new MyStateObject(data,fs,tb_targetpath.Text,pos));
+                ParameterizedThreadStart threadStart = new ParameterizedThreadStart(StartRead);
+                
             }
             #region Old code
             /*
@@ -117,6 +119,10 @@ namespace CopyAPP
                 stream.EndWrite(assres);
                 _fswrite.Close();
             }
+        }
+        void StartRead(object start)
+        {
+
         }
     }
 }

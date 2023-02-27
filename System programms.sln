@@ -17,7 +17,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CopyAPP", "CopyAPP\CopyAPP.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinApiMessageBeepDZ1", "WinApiMessageBeepDZ1\WinApiMessageBeepDZ1.csproj", "{631F4D27-A14F-4459-AA7D-6AB06D87567E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncWork", "AsyncWork\AsyncWork.csproj", "{2818A25F-DEE7-42B7-977E-F8328ADBFA54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncWork", "AsyncWork\AsyncWork.csproj", "{2818A25F-DEE7-42B7-977E-F8328ADBFA54}"
+EndProject
+<<<<<<< HEAD
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factorial_async", "Factorial_async\Factorial_async.csproj", "{590C5268-CC05-4A2C-ABBB-64054DBF30B1}"
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DancingProgressBar", "DancingProgressBar\DancingProgressBar.csproj", "{08C2C8E8-EC7C-47C0-9585-84AC9237BFB1}"
+>>>>>>> c303d5681aa0c2912ed6ae3363d19f7eb9b6a460
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +63,17 @@ Global
 		{2818A25F-DEE7-42B7-977E-F8328ADBFA54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2818A25F-DEE7-42B7-977E-F8328ADBFA54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2818A25F-DEE7-42B7-977E-F8328ADBFA54}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
+		{590C5268-CC05-4A2C-ABBB-64054DBF30B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{590C5268-CC05-4A2C-ABBB-64054DBF30B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{590C5268-CC05-4A2C-ABBB-64054DBF30B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{590C5268-CC05-4A2C-ABBB-64054DBF30B1}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{08C2C8E8-EC7C-47C0-9585-84AC9237BFB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08C2C8E8-EC7C-47C0-9585-84AC9237BFB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08C2C8E8-EC7C-47C0-9585-84AC9237BFB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08C2C8E8-EC7C-47C0-9585-84AC9237BFB1}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> c303d5681aa0c2912ed6ae3363d19f7eb9b6a460
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
