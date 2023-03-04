@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Factorial_async", "Factoria
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SearchWords", "SearchWords\SearchWords.csproj", "{A070154B-5336-40E6-8AF0-709A9E0C8027}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SisProgDZ_process", "SisProgDZ_process\SisProgDZ_process.csproj", "{6C12E9ED-DA8A-4B02-A0BC-9D66DCBCF018}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SisProgDZ_process", "SisProgDZ_process\SisProgDZ_process.csproj", "{6C12E9ED-DA8A-4B02-A0BC-9D66DCBCF018}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SisProgDZ_threads", "SisProgDZ_threads\SisProgDZ_threads.csproj", "{AC459ED0-8D3B-44DE-B647-38969368531A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{6C12E9ED-DA8A-4B02-A0BC-9D66DCBCF018}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C12E9ED-DA8A-4B02-A0BC-9D66DCBCF018}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C12E9ED-DA8A-4B02-A0BC-9D66DCBCF018}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC459ED0-8D3B-44DE-B647-38969368531A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC459ED0-8D3B-44DE-B647-38969368531A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC459ED0-8D3B-44DE-B647-38969368531A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC459ED0-8D3B-44DE-B647-38969368531A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
