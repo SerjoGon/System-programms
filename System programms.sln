@@ -25,7 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SearchWords", "SearchWords\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SisProgDZ_process", "SisProgDZ_process\SisProgDZ_process.csproj", "{6C12E9ED-DA8A-4B02-A0BC-9D66DCBCF018}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SisProgDZ_threads", "SisProgDZ_threads\SisProgDZ_threads.csproj", "{AC459ED0-8D3B-44DE-B647-38969368531A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SisProgDZ_threads", "SisProgDZ_threads\SisProgDZ_threads.csproj", "{AC459ED0-8D3B-44DE-B647-38969368531A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_text_parser", "WPF_text_parser\WPF_text_parser.csproj", "{4303CBAC-D669-47BB-9BA4-5752A26C6791}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{AC459ED0-8D3B-44DE-B647-38969368531A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC459ED0-8D3B-44DE-B647-38969368531A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC459ED0-8D3B-44DE-B647-38969368531A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4303CBAC-D669-47BB-9BA4-5752A26C6791}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4303CBAC-D669-47BB-9BA4-5752A26C6791}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4303CBAC-D669-47BB-9BA4-5752A26C6791}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4303CBAC-D669-47BB-9BA4-5752A26C6791}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
