@@ -61,7 +61,9 @@ namespace WPF_textfinder
             {
                 if (s.Trim() != "" && Regex.IsMatch(s, keyWord))
                 {
-                    textBox1.Text = splitText[splitText.IndexOf(keyWord) + 1] + " " + splitText[splitText.IndexOf(keyWord) + 3];
+                    TextRange textRange = new TextRange(rtb_text.Document.ContentStart, rtb_text.Document.ContentEnd);
+
+                    textRange.Load(splitText[splitText.IndexOf(keyWord) + 1] + " " + splitText[splitText.IndexOf(keyWord) + 3]);
                     break;
                 }
             }
