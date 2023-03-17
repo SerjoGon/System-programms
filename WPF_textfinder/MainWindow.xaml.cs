@@ -63,8 +63,6 @@ namespace WPF_textfinder
                 {
                     TextRange textRange = new TextRange(rtb_text.Document.ContentStart, rtb_text.Document.ContentEnd);
 
-                    textRange.Load(splitText[splitText.IndexOf(keyWord) + 1] + " " + splitText[splitText.IndexOf(keyWord) + 3]);
-                    break;
                 }
             }
         }
