@@ -1,0 +1,24 @@
+﻿<Window x:Class="WPF_textfinder.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_textfinder"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DockPanel Width="800" LastChildFill="False" Margin="0,117,0,0">
+            <RichTextBox x:Name="rtb_text" Width="800">
+                <FlowDocument>
+                    <Paragraph>
+                        <Run Text=""/>
+                    </Paragraph>
+                </FlowDocument>
+            </RichTextBox>
+        </DockPanel>
+        <Button Content="Выбор текстового файла" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="31" Width="161" Click="Button_Click"/>
+        <Button Content="Поиск" HorizontalAlignment="Left" Margin="10,56,0,0" VerticalAlignment="Top" Height="30" Width="161" Click="Button_Click_1"/>
+        <TextBox HorizontalAlignment="Left" Margin="202,58,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="174" Height="28"/>
+
+    </Grid>
+</Window>
