@@ -1,32 +1,34 @@
+using Microsoft.VisualBasic.Devices;
+using System.IO;
+
 namespace WF_HW_Mod3_task3_4
 {
-    public  partial class Form1 : Form
+    public partial class Form1 : Form
     {
-        public  Form1()
+        string filepath = "";
+        //"F:\\Games\\Test folder\\test.txt";
+        public Form1()
         {
             InitializeComponent();
+
         }
 
-        async void btn_filefind_Click(object sender, EventArgs e)
+        void btn_filefind_Click(object sender, EventArgs e)
         {
-            Thread thr = new Thread(() => { Task task = ofdFunction(); });
+            ofdFunction();
         }
-        public async Task ofdFunction()
+        public void ofdFunction()
         {
-            await Task.Run(async () =>
+            try
             {
-                try
+                OpenFileDialog ofd = new OpenFileDialog();
+                ofd.Filter = "Text Files (*.txt|*.txt|All files (*.*)|*.*";
+                if (ofd.ShowDialog() == DialogResult.OK)
                 {
-
-                     OpenFileDialog ofd = new OpenFileDialog();
-                    ofd.Filter = "Text Files (*.txt|*.txt|All files (*.*)|*.*";
-                    if (ofd.ShowDialog() == DialogResult.OK)
-                    {
-                        await SearchInTxt(ofd.FileName, textBox1.Text);
-                    }
+                    filepath = ofd.FileName;
                 }
-                catch (Exception ex) { MessageBox.Show(ex.Message); }
-            });
+            }
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
 
         }
         private async Task SearchInTxt(string path, string keyWord)
@@ -43,7 +45,7 @@ namespace WF_HW_Mod3_task3_4
                     {
                         if (s.Trim() != "" && System.Text.RegularExpressions.Regex.IsMatch(s, keyWord))
                         {
-                            richTextBox1.Text += splitText[splitText.IndexOf(keyWord)];
+                            richTextBox1.Text += splitText[splitText.IndexOf(keyWord)]+" ";
                             counter++;
                         }
                     }
@@ -52,6 +54,11 @@ namespace WF_HW_Mod3_task3_4
                 catch (Exception ex) { MessageBox.Show(ex.Message); }
             });
 
+        }
+
+        private async void btn_start_Click(object sender, EventArgs e)
+        {
+             await SearchInTxt(filepath,textBox1.Text);
         }
     }
 }

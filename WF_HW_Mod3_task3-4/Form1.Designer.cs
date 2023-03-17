@@ -33,6 +33,7 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.lbl_count = new System.Windows.Forms.Label();
             this.lbl_1 = new System.Windows.Forms.Label();
+            this.btn_start = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_filefind
@@ -79,11 +80,22 @@
             this.lbl_1.Text = "Количество повторений слова";
             this.lbl_1.UseCompatibleTextRendering = true;
             // 
+            // btn_start
+            // 
+            this.btn_start.Location = new System.Drawing.Point(12, 46);
+            this.btn_start.Name = "btn_start";
+            this.btn_start.Size = new System.Drawing.Size(75, 23);
+            this.btn_start.TabIndex = 5;
+            this.btn_start.Text = "Поиск";
+            this.btn_start.UseVisualStyleBackColor = true;
+            this.btn_start.Click += new System.EventHandler(this.btn_start_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_start);
             this.Controls.Add(this.lbl_1);
             this.Controls.Add(this.lbl_count);
             this.Controls.Add(this.richTextBox1);
@@ -103,5 +115,6 @@
         private RichTextBox richTextBox1;
         private Label lbl_count;
         private Label lbl_1;
+        private Button btn_start;
     }
 }
